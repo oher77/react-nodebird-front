@@ -1,5 +1,5 @@
-import React from 'react'
-import AppLayout from '../components/AppLayout'
+import React from 'react';
+import AppLayout from '../components/AppLayout';
 
 const Home = () => {
     return (
@@ -9,6 +9,6 @@ const Home = () => {
             </div>
         </AppLayout>
     )
-}
+};
 
 export default Home;

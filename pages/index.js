@@ -1,14 +1,14 @@
 import React from 'react'
 import AppLayout from '../components/AppLayout'
 
-const Profile = () => {
+const Home = () => {
     return (
         <AppLayout>
             <div>
-                나의 프로필 입니다. 조혜정asdf
+                Hello! Next
             </div>
         </AppLayout>
     )
 }
 
-export default Profile;
+export default Home;

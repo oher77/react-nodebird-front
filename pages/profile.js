@@ -1,13 +1,26 @@
-import React from 'react'
+import React from 'react';
+import Head from 'next/head';
+
 import AppLayout from '../components/AppLayout'
+import NicknameEditForm from '../components/NicknameEditForm';
+import FollowList from '../components/FollowList';
 
 const Profile = () => {
+    const followerList = [{nickname: 'HerUse'}, {nickname: '제로초'},{nickname: '장하연'}];
+    const followingList = [{nickname: 'HerUse'}, {nickname: '제로초'},{nickname: '장하연'}];
+
     return (
+        <>
+        <Head>
+            <title>내 프로필 | NodeBird</title>
+        </Head>
         <AppLayout>
-            <div>
-                나의 프로필 입니다. 조혜정asdf
-        </div>
+            <NicknameEditForm/>
+            <FollowList header="팔로잉 목록" data={followerList} />
+            <FollowList header="팔로워 목록" data={followingList} />
+
         </AppLayout>
+        </>
     )
 }
 
